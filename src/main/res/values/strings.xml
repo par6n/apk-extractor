@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">APK Extractor</string>
+    <string name="wrong_package">Wrong package</string>
+</resources>
