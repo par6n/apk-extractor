@@ -7,10 +7,9 @@ import android.graphics.drawable.Drawable;
  */
 public class PackageItem {
     private Drawable icon;
-
     private String name;
-
     private String packageName;
+    private String apkSize;
 
     public String getPackageName() {
         return packageName;
@@ -35,4 +34,7 @@ public class PackageItem {
     public void setIcon(Drawable icon) {
         this.icon = icon;
     }
+
+    public void setApkSize(String apkSize) { this.apkSize = apkSize; }
+    public String getApkSize() { return apkSize; }
 }

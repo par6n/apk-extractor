@@ -40,10 +40,12 @@ public class ArrayAdapterItem extends ArrayAdapter<PackageItem> {
 
         TextView textViewNameItem = (TextView) convertView.findViewById(R.id.textViewNameItem);
         TextView textViewPackageItem = (TextView) convertView.findViewById(R.id.textViewPackageItem);
+        TextView textViewSize = (TextView) convertView.findViewById( R.id.textViewSize );
         ImageView appIcon = (ImageView) convertView.findViewById(R.id.appIcon);
 
         textViewNameItem.setText( packageItem.getName() );
         textViewPackageItem.setText( packageItem.getPackageName() );
+        textViewSize.setText( packageItem.getApkSize() );
         appIcon.setImageDrawable( packageItem.getIcon() );
 
         return convertView;

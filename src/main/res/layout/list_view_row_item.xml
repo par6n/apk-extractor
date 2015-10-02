@@ -15,16 +15,28 @@
                 android:layout_height="32dip"
                 android:id="@+id/appIcon" />
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textViewNameItem"
-                    android:text="App name"
-                    android:paddingLeft="10dip"
-                    android:textSize="20dp" />
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewNameItem"
+                        android:text="App name"
+                        android:paddingLeft="10dip"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewSize"
+                        android:layout_alignParentRight="true"
+                        android:paddingTop="5dip"
+                        android:text="x MB"
+                        />
+                </RelativeLayout>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -34,7 +46,7 @@
                     android:text="Package name"
                     android:typeface="monospace"
                     android:textSize="13dp"
-                    android:textColor="#000"/>
+                    android:textColor="@color/secondary_text_default_material_light"/>
             </LinearLayout>
 
         </LinearLayout>

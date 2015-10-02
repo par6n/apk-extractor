@@ -2,20 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ehsaan.myapplication" >
 
-    <style
-        name="AppTheme"
-        parent="Theme.AppCompat" >
-        <item name="android:colorPrimary">
-@color/blue
-        </item>
-        <item name="android:colorPrimaryDark">
-@color/primary_dark
-        </item>
-        <item name="android:colorAccent">
-@color/accent
-        </item>
-    </style>
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application

@@ -1,6 +1,6 @@
 package com.example.ehsaan.myapplication;
 
-import android.app.AlertDialog;
+import android.support.v7.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -28,7 +28,7 @@ public class OnItemClickListenerListViewItem implements AdapterView.OnItemClickL
         TextView textViewPackage = (TextView) view.findViewById(R.id.textViewPackageItem); // Get package name from TextView
 
         if ( ! MainActivity.isSDCardPresent() ) { // Check for SD Card
-            new AlertDialog.Builder( context ) // Build a dialog
+            new AlertDialog.Builder( context, R.style.AppCompatAlertDialogError ) // Build a dialog
                     .setTitle( "SD Card is not available" ) // Here's the title
                     .setMessage( "SD Card isn't available. We can't continue." ) // And the content
                     .setPositiveButton( android.R.string.ok, new DialogInterface.OnClickListener() {
